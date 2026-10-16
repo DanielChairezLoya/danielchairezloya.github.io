@@ -3,24 +3,46 @@
     margin: 0;
 }
 
+:root{
+    --letra: #111111;
+    --fondo: #CB9657;
+    --rojo: #AC0300;
+    --blanco: white;
+}
+
+.blanco{
+    color: var(--blanco);
+}
+.fondo{
+    background-color: var(--fondo);
+}
+
+.rojo{
+    background-color: var(--rojo);
+}
+
+.letra{
+    color: var(--letra);
+}
+.letraroja{
+    color: var(--rojo);
+}
+
 body {
-    background-color: #CB9657;
-    color: #333;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
     display: flex;
     justify-content: space-between;
-    background-color: #CB9657;
+    
    
     padding: 15px 20px;
     align-items: center;
-    width: 100%;
+    width: calc(100%-40px);
     
 }
 h1{
-    color: #111111;
     width: 150px;
     font-size: medium;
 }
@@ -28,11 +50,12 @@ header>div>nav>ul {
     flex-direction: row-reverse;
     display: flex;
     gap: 50px;
-    padding-right: 170px;
+    padding-right: 400px;
 }
-header>div>nav>ul>li:first-child{
-    color:#AC0300;
+header>div>h1{
+    padding-right: 300px;
 }
+
 
 
 header>div>nav>ul>li {
@@ -40,7 +63,7 @@ header>div>nav>ul>li {
 }
 
 header>div>button {
-    background-color: #d9d9d9;
+    background-color: transparent;
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -53,8 +76,70 @@ header>div:last-child {
     gap: 10px;
 }
 .row{
-    background-color: #AC0300;
     height: 1%;
     gap: 10px;
     padding-top: 2.5%;
+}
+
+#V1{
+   position: absolute;
+   top: 109px;
+   left: 0px;
+   width: 21%;    
+}
+
+#V2{
+   position: absolute;
+   top: 420px;
+   right: 0px;
+   width: 21%;    
+}
+
+section#inicio{
+    background-image: url(../img/caballeropaisaje.png);
+    background-size: 100% 100%;
+    height: 587px;
+}
+
+img#espada{
+    height: 33px;
+    width: 33px;
+}
+img#escudo{
+    height: 33px;
+    width: 33px;
+}
+img#papel{
+    position: absolute;
+    top: 170px;
+    left: 450px;
+    height: 450px;
+    width: 650px;
+    
+}
+
+h2{
+    position: relative;
+    padding-top: 150px;
+    text-align: center;
+    z-index: 1;
+}
+p{
+    position: relative;
+    font-size: small;
+    text-align: center;
+    padding-top: 40px;
+    z-index: 1;
+}
+
+section#inicio>button{
+    
+    border-radius: 20px;
+    position: absolute;
+    z-index: 10;
+    width: 200px;
+    height: 50px;
+    top: 470px;
+    right: 655px;
+
 }
